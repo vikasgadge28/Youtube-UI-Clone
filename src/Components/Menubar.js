@@ -12,6 +12,8 @@ const Menubar = () => {
 
    <div className="w-20 p-7 py-6 hover:bg-slate-100 text-xs  rounded-xl  flex flex-col items-center "><img className="mb-2" src="https://cdn.icon-icons.com/icons2/3237/PNG/512/menu_youtube_social_media_subs_subscription_icon_197393.png" alt=""/>
    Subscriptions</div>
+
+   <div> <img src="" alt="" /></div>
     </div>
   )
 }
