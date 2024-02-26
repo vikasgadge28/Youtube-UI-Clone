@@ -6,7 +6,7 @@ initialState:{},
 reducers:{
     cacheResults : (state, action) =>{
       Object.assign(state, action.payload);
-    },
+    },//
 },
 });
 
