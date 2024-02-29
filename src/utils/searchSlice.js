@@ -9,7 +9,7 @@ reducers:{
     },//
 },
 });
-
+// cos
 export const  {cacheResults}  = searchSlice.actions;
 
 export default searchSlice.reducer;

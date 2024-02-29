@@ -51,22 +51,22 @@ const Head = () => {
   return (
     <div className="grid grid-flow-col w-full fixed bg-white pb-6 z-10">
       {/* Menu Icons */}
-      <div className="flex h-7 col-span-1 ml-5 mt-4">
+      <div className="flex h-7 col-span-1 ml-5 mt-4 ">
         <img
           onClick={toggleMenuHandler}
-          className="cursor-pointer"
+          className="cursor-pointer hidden sm:block"
           src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"
           alt="menu"
         />
         <img
-          className="mx-5 h-5 mt-1 cursor-pointer"
+          className="sm:mx-5 h-5 mt-1 cursor-pointer"
           src="https://www.edigitalagency.com.au/wp-content/uploads/Youtube-logo-png.png"
           alt="logo"
         />
       </div>
 
       {/* Search Bar */}
-      <div>
+      <div className=" hidden sm:block">
         <div>
           <div className="flex h-6 col-span-10 mx-20 mt-3">
             <input
@@ -115,14 +115,14 @@ const Head = () => {
       </div>
 
       {/* User Icons */}
-      <div className="flex h-8 col-span-1 gap-2 mt-4 justify-around mr-8">
+      <div className="flex h-8 col-span-1 gap-2 mt-4 justify-end mr-2 sm:mr-8">
         <img
-          className="h-9 cursor-pointer"
+          className="h-9 hidden sm:block cursor-pointer"
           src="https://static.thenounproject.com/png/5109176-200.png"
           alt="create"
         />
         <img
-          className="h-7 mt-1 cursor-pointer"
+          className="h-7 hidden sm:block mt-1 cursor-pointer"
           src="https://static.vecteezy.com/system/resources/thumbnails/002/359/770/small/bell-icon-free-vector.jpg"
           alt="bell"
         />
