@@ -5,13 +5,14 @@ import { useSearchParams } from 'react-router-dom';
 import CommentsContainer from './CommentsContainer';
 import LiveChat from './LiveChat';
 
-const WatchPage = () => {
+const WatchPage = ({info}) => {
   const [searchParams] = useSearchParams();
   const dispatch = useDispatch();
 
   useEffect(() => { 
     dispatch(closeMenu());
   }, [dispatch]);
+ 
 
   return (
     <div className="flex flex-col max-w-[48rem] w-full">
@@ -28,6 +29,7 @@ const WatchPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+             
       </div>
 
      <div>
